@@ -1,0 +1,22 @@
+<%- include('../layout/header') %>
+
+<main class="grid">
+    <form action="/list" method="POST">
+      <input type="text" name="name" value="" placeholder="Dragon name">
+      <input type="text" name="food" value="" placeholder="Food">
+      <input type="number" step=".1" name="age" value="" placeholder="Age">
+      <input list="locations" name="location_name" id="location_name" autocomplete="none" placeholder="Location">
+
+      <datalist id="locations">
+        <% var i = 1; data.forEach( item => { %>
+          <option value="<%= item.location_name %>">
+        <% }) %>
+      </datalist>
+      <button class="button button2" type="submit">Add new dragon</button>
+    </form>
+    
+    <form action="/location" method="POST">
+      <input type="text" name="location_name" value="" placeholder="Location Name">
+      <button class="button button2" type="submit">Add new location</button>
+    </form>
+  </main>

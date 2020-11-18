@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: start;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    height: 350px;
+    border-left: 5px solid #6f4a8e;
+
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text>button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+header {
+    height: 200px;
+    text-align: center;
+    background: #5c6e91;
+    position: relative;
+    padding: 15px 0;
+    color: #fff;
+}
+
+header nav {
+    position: relative;
+    top: 43px;
+}
+header ul {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    background: #222;
+}
+header ul li {
+    display: inline-block;
+    /* line-height: 50px; */
+    padding: 20px 30px;
+}
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 40px 40px 40px 40px;
+    /* height: 100vh; */
+}
+
+input[type=text], select, input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form-edit {
+      width: 320px;
+      margin: auto;
+      text-align: center;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+
+  .button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA; width: 70%;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+hr {
+    margin: 40px 0;
+}
+
+#location_name {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.text h3, .text p {
+    text-align: left;
+}
+
+.footer {
+  /* height: 50px; */
+  background: #222;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+}

@@ -1,0 +1,29 @@
+<%- include('../../layout/header') %>
+
+<main>
+<div class="form-edit">
+    <!-- <p><%= data.dragon_name %></p>
+    <p><%= data.food %></p>
+    <p><%= data.age %></p> -->
+
+    <form action="/update/<%= data.id %>?_method=put" method="POST">
+        <input type="text" name="name" value="<%= data.dragon_name %>">
+        <input type="text" name="food" value="<%= data.food %>">
+        <input type="text" name="age" value="<%= data.age %>">
+
+        <input list="locations" name="location_name" id="location_name" autocomplete="none" value="<%= data.location_name %>">
+
+        <datalist id="locations">
+          <% var i = 1; location.forEach( item => { %>
+            <option <%= item.location_name == data.location_name ? 'selected' : '' %> value="<%= item.location_name %>">
+          <% }) %>
+        </datalist>
+  
+        <button class="button button1" type="submit">save</button>
+    </form>
+    <form action="/delete/<%= data.id%>?_method=delete" method="POST">
+        <button class="button button3" type="submit">delete</button>
+    </form>
+</div>
+
+</main>

@@ -1,0 +1,23 @@
+
+<%- include('../../layout/header') %>
+
+<main class="grid">
+    <% if(data.length > 0) {
+        var i = 1; data.forEach( item => { %>
+        <article>
+            <div class="text">
+                <h4># <%= item.id %></h4>
+                <h3>Name: <%= item.dragon_name %></h3>
+                <p>Favorite food: <%= item.food %></p>
+                <p>Age: <%= item.age %></p>
+                <p>Location: <%= item.location_name %></p>
+                <hr>
+                <a class="button button2" href="details/<%= item.id %>">details</a>
+            </div>
+          </article>        
+    <% })} else { %>
+        <h2>no data available</h2>
+    <%} %>
+    
+  </main>
+
